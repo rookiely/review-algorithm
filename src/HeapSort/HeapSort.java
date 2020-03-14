@@ -20,7 +20,7 @@ public class HeapSort {
             largestNode = leftNode;
         }
         if (rightNode < length && arr[rightNode] > arr[largestNode]) {
-            rightNode = rightNode;
+            largestNode = rightNode;
         }
         if (largestNode != index) {
             swap(arr,largestNode,index);

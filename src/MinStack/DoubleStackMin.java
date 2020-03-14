@@ -12,7 +12,7 @@ public class DoubleStackMin {
     }
 
     public void push(Integer num){
-        //压入时判断最小栈是否为空或者要压入的数是否比最小栈栈顶数还小，时则压入数据站的同时压入最小栈
+        //压入时判断最小栈是否为空或者要压入的数是否比最小栈栈顶数还小，是则压入数据站的同时压入最小栈
         if(stackMin.isEmpty()||getMin()>num){
             stackMin.push(num);
         }
